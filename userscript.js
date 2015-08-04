@@ -11,7 +11,7 @@
 $(function(){
     var current = window.location.href;
 	var index = current.indexOf('.huiji.wiki');
-	$('.dropdown-menu').append('<li><a href="/wiki/特殊:跨wiki">所有Wiki</a></li>');
+	$('#icon-section').find('.dropdown-menu').append('<li><a href="/wiki/特殊:跨wiki">所有Wiki</a></li>');
 	
 	if (current.indexOf('.huiji.wiki/wiki/%E7%89%B9%E6%AE%8A:%E8%B7%A8wiki') > 0){
         $('.mw-interwikitable-row').filter(function(i, e){
