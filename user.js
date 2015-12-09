@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name         Huiji.AllWikis
 // @namespace    Huiji
-// @version      0.0.2
+// @version      0.0.3
 // @description  显示所有灰机维基
 // @author       lianzhao
 // @match        http://*.huiji.wiki/*
 // @grant        none
 // ==/UserScript==
 
-$(function(){
+window.onload=function(){
     var current = window.location.href;
 	var index = current.indexOf('.huiji.wiki');
 	$('.more-link').append('<li><a href="/wiki/特殊:跨wiki">所有Wiki</a></li>');
@@ -22,4 +22,4 @@ $(function(){
             $(cell).html('<a href="http://' + text + '.huiji.wiki/">' + text + '</a>');
         })
 	}
-});
+}
